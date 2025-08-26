@@ -23,7 +23,6 @@ document.addEventListener("DOMContentLoaded", () => {
   const active = document.querySelector("nav a.active");
   if (active) moveUnderline(active);
 
-  // соответствие пунктов меню и секций
   const sectionMap = {
     "Home": "first",
     "Contact": "fifth",
@@ -40,24 +39,20 @@ document.addEventListener("DOMContentLoaded", () => {
         scrollToId(sectionMap[text]);
       }
 
-      // визуальное состояние
       links.forEach(l => l.classList.remove("active"));
       link.classList.add("active");
       moveUnderline(link);
 
-      // закрываем мобильное меню
       nav.classList.remove("active");
       burger.classList.remove("open");
     });
   });
 
-  // бургер меню
   burger.addEventListener("click", () => {
     burger.classList.toggle("open");
     nav.classList.toggle("active");
   });
 
-  // кнопка "Lets go" — к #second с учётом фиксированной шапки
   const letsGoBtn = document.querySelector(".first button");
   if (letsGoBtn) {
     letsGoBtn.addEventListener("click", () => {
