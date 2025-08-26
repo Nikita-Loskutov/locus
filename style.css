@@ -4,21 +4,30 @@
     box-sizing: border-box;
     user-select: none;
     -webkit-tap-highlight-color: transparent;
+    font-family: Poppins;
 }
 header {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    height: 150px;
+    height: 100px;
+    border-bottom: 1px solid black;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: #fff;
+    z-index: 1000;
 }
 
+body {
+    padding-top: 100px;
+}
 .logo {
     display: flex;
     align-items: center;
 }
-
 .logo h1 {
-    font-family: Poppins;
     font-weight: 800;
     font-size: 35px;
     line-height: 100%;
@@ -28,13 +37,11 @@ header {
     width: 50px;
     height: 50px;
 }
-
 nav {
   display: flex;
   gap: 100px;
   position: relative;
 }
-
 nav a {
   font-family: Poppins, sans-serif;
   font-weight: 400;
@@ -47,13 +54,11 @@ nav a {
 }
 nav a:hover {
   color: #7a7a7a;
-
 }
 nav a.active {
   color: #58A9A5;
   font-weight: 700;
 }
-
 nav .underline {
   position: absolute;
   bottom: 0;
@@ -72,37 +77,31 @@ nav .underline {
     border-radius: 15px;
     background: #58A9A5;
     border: none;
-    font-family: Poppins;
     font-weight: 500;
     font-size: 25px;
     line-height: 100%;
     color: white;
     transition: all 0.5s;
 }
-
 .sign_mobile:hover {
     cursor: pointer;
     background: #4c918d;
 }
-
 .sign {
     padding: 25px 80px ;
     border-radius: 15px;
     background: #58A9A5;
     border: none;
-    font-family: Poppins;
     font-weight: 500;
     font-size: 25px;
     line-height: 100%;
     color: white;
     transition: all 0.5s;
 }
-
 .sign:hover {
     cursor: pointer;
     background: #4c918d;
 }
-
 .burger {
   display: none;
   flex-direction: column;
@@ -111,7 +110,6 @@ nav .underline {
   height: 22px;
   cursor: pointer;
 }
-
 .burger span {
   display: block;
   height: 4px;
@@ -119,27 +117,21 @@ nav .underline {
   border-radius: 2px;
   transition: 0.3s;
 }
-
 .burger.open span:nth-child(1) {
     transform: rotate(45deg) translate(7px, 7.5px);
 }
-
 .burger.open span:nth-child(2) {
   opacity: 0;
 }
-
 .burger.open span:nth-child(3) {
   transform: rotate(-45deg) translate(5px, -5px);
 }
-
-
 .first {
     display: flex;
     margin-top: 100px;
     justify-content: center;
     align-items: center;
 }
-
 .left {
     width: 45%;
     display: flex;
@@ -148,23 +140,19 @@ nav .underline {
     gap: 50px;
 }
 .left h1 {
-    font-family: Poppins;
     font-weight: 800;
     font-size: 50px;
     line-height: 100%;
     width: 65%;
     color: #1C2323;
 }
-
 .left p {
-    font-family: Poppins;
     font-weight: 400;
     font-size: 30px;
     line-height: 100%;
     width: 65%;
     color: #404242;
 }
-
 .left button {
     padding: 20px 40px;
     border-top-left-radius: 20px;
@@ -174,19 +162,16 @@ nav .underline {
     color:white;
     border: none;
     max-width: 200px;
-    font-family: Poppins;
     font-weight: 700;
     font-size: 22px;
     line-height: 100%;
     transition: all 0.3s;
 
 }
-
 .left button:hover{
         cursor: pointer;
     background: #4c918d;
 }
-
 .right {
     width: 40%;
     background-color: #CCF0E6;
@@ -195,12 +180,7 @@ nav .underline {
     align-items: center;
     justify-content: center;
     padding: 40px;
-
 }
-
-
-
-
 .second {
     display: flex;
     flex-direction: column;
@@ -208,18 +188,7 @@ nav .underline {
     justify-content: center;
     margin-top: 100px;
 }
-
-.second h1 {
-    font-family: Poppins;
-    font-weight: 800;
-    font-size: 60px;
-    line-height: 100%;
-    color: #1C2323;
-    text-align: center;
-}
-
-.second p {
-    font-family: Poppins;
+.descript { 
     font-weight: 400;
     font-size: 30px;
     line-height: 100%;
@@ -227,14 +196,12 @@ nav .underline {
     margin: 15px 0px 15px 0px;
     text-align: center;
 }
-
 .block {
     display: flex;
     width: 85%;
     background-color: #CCF0E6;
     height: 350px;
 }
-
 .img {
     width: 70%;
 }
@@ -243,7 +210,6 @@ nav .underline {
     object-fit: Cover;
     max-height: 350px;
 }
-
 .text {
     display: flex;
     align-items: center;
@@ -252,14 +218,12 @@ nav .underline {
 }
 .text h2 {
     width: 80%;
-    font-family: Poppins;
     font-weight: 500;
     font-size: 22px;
     line-height: 100%;
     color: #486958;
 
 }
-
 .down {
     display: flex;
     align-items: center;
@@ -267,7 +231,6 @@ nav .underline {
     width: 85%;
     margin-top: 50px;
 }
-
 .dleft {
     width: 45%;
 }
@@ -276,25 +239,20 @@ nav .underline {
     width: 500px;
     overflow: hidden;
 }
-
 .dright {
     width: 60%;
     display: flex;
     flex-direction: column;
     justify-content: center;
 }
-
-.dright h1 {
-    font-family: Poppins;
+.dright h1 { 
     font-weight: 700;
     font-size: 40px;
     line-height: 100%;
     color: #1C2323;
     width: 55%;
 }
-
 .dright h2 {
-    font-family: Poppins;
     font-weight: 500;
     font-size: 30px;
     line-height: 100%;
@@ -302,7 +260,6 @@ nav .underline {
     margin-top: 25px;
     width: 70%;
 }
-
 .third {
     display: flex;
     flex-direction: column;
@@ -311,25 +268,6 @@ nav .underline {
     text-align: center;
     margin-top: 50px;
 }
-
-.third h1 {
-    font-family: Poppins;
-    font-weight: 800;
-    font-size: 70px;
-    line-height: 100%;
-    color: #1C2323;
-    margin: 10px;
-}
-
-.third h2 {
-    font-family: Poppins;
-    font-weight: 400;
-    font-size: 30px;
-    line-height: 100%;
-    color: #404242;
-    margin: 10px;
-}
-
 .hr {
     background-color: #58A9A5;
     width:100px;
@@ -338,7 +276,6 @@ nav .underline {
     margin-bottom:10px;
 
 }
-
 .project {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -348,7 +285,6 @@ nav .underline {
     width: 90%;
     margin-top: 100px;
 }
-
 .pfirst, .psecond , .pthird  {
     display: flex;
     flex-direction: column;
@@ -356,17 +292,14 @@ nav .underline {
     align-items: center;
     text-align: center;
 }
-
-.pfirst h1, .psecond h1, .pthird h1 {
-    font-family: Poppins;
+.projecttitle {
     font-weight: 700;
     font-size: 40px;
     line-height: 100%;
     color: #58A9A5;
     margin-top: 0px;
 }
-.pfirst p, .psecond p, .pthird p {
-    font-family: Poppins;
+.projectdiscript {  
     font-weight: 500;
     font-size: 20px;
     line-height: 100%;
@@ -374,36 +307,28 @@ nav .underline {
     margin: 20px;
     width: 80%;
 }
-
 .pfirst img, .pthird img {
     border-radius: 0px 0px 225px 225px;
     width: 450px;
     height: 450px;
 }
-
 .psecond img {
     border-radius: 225px;
     width: 450px;
     height: 450px;
 }
-
 .fourth {
     display: flex;
     flex-direction: column;
     align-items: center;
     margin-top: 100px;
-
-
 }
-
-.title {
-    font-family: Poppins;
+.title { 
     font-weight: 800;
     font-size: 70px;
     line-height: 100%;
     color: #1C2323;
 }
-
 .signature {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
@@ -413,18 +338,15 @@ nav .underline {
     text-align: center;
     width: 75%;
 }
-
 .signature div {
     display: flex;
     align-items: center;
     justify-content: center;
 }
-
 .signature img {
     max-height: 200px;
     max-width: 200px;
 }
-
 .fdown {
     display: flex;
     align-items: center;
@@ -435,7 +357,6 @@ nav .underline {
 .fdown img {
     max-height: 700px;
 }
-
 .fimg {
     width: 40%;
     max-height: 700px;
@@ -445,38 +366,29 @@ nav .underline {
     flex-direction: column;
     width: 60%;
     justify-content: center;
-    
 }
-
 .score {
     display: flex;
     align-items: center;
     gap: 100px;
 }
-
 .scard {
     display: flex;
     flex-direction: column;
 }
-
 .scard h1 {
-    font-family: Poppins;
     font-weight: 800;
     font-size: 70px;
     line-height: 100%;
     color: #58A9A5;
 }
-
 .scard h2 {
-    font-family: Poppins;
     font-weight: 800;
     font-size: 30px;
     line-height: 100%;
     color: #58A9A5;
 }
-
-.ftext h3 {
-    font-family: Poppins;
+.ftext h3 { 
     font-weight: 500;
     font-size: 25px;
     line-height: 100%;
@@ -485,15 +397,13 @@ nav .underline {
     margin-top: 100px;
     margin-bottom: 40px;
 }
-
 .ftext p {
-    font-family: Poppins;
+    
     font-weight: 500;
     font-size: 25px;
     line-height: 100%;
     color: #58A9A5;
 }
-
 .fifth {
     margin-top: 100px;
     display: flex;
@@ -506,8 +416,7 @@ nav .underline {
     flex-direction: column;
     width: 50%;
 }
-.fifth p {
-    font-family: Poppins;
+.fifth p {  
     font-weight: 500;
     font-size: 25px;
     line-height: 100%;
@@ -516,7 +425,6 @@ nav .underline {
     margin-top: 10px;
     margin-bottom: 10px;
 }
-
 .contact-form {
     width: 550px;
     background: #fff;
@@ -565,13 +473,11 @@ label {
 .send-btn:hover {
     background: #3c8786;
 }
-
 .input::placeholder {
     color: #55706b;
     opacity: 1;
     font-size: 16px;
 }
-
 @media screen and (max-width: 1024px){
     .logo img {
         width: 40px;
@@ -611,13 +517,10 @@ label {
         font-size: 25px;
         width: 85%;
     }
-    .third h1 {
-        font-size: 60px;
-    }
     .project {
         margin-top: 50px;
     }
-    .pfirst h1, .psecond h1, .pthird h1 {
+    .projecttitle {
         font-size: 30px;
     }
     .pfirst img, .pthird img, .psecond img {
@@ -748,7 +651,6 @@ label {
         margin: 0px;
     }
 }
-
 @media screen and (max-width: 425px){
     .logo img {
         width: 25px;
@@ -785,15 +687,15 @@ label {
     .right {
         display: none;
     }
-
     .left button {
         max-width: none;
     }
-
     header {
         height: 80px;;
     }
-
+    body {
+        padding-top: 80px;
+    }
     nav {
         position: absolute;
         top: 80px;
@@ -834,12 +736,6 @@ label {
     }
     .second {
         margin-top: 50px;
-    }
-    .second h1 {
-        font-size: 45px;
-    }
-    .second p {
-        font-size: 25px;
     }
     .block {
         flex-direction: column;
@@ -889,13 +785,10 @@ label {
         grid-template-columns: repeat(1, 1fr);
         margin-top: 20px;
     }
-    .third h1 {
-        font-size: 45px;
-    }
-    .third h2 {
+    .descript {
         font-size: 25px;
     }
-    .pfirst h1, .psecond h1, .pthird h1 {
+    .projecttitle {
         font-size: 28px;
     }
     .title {
@@ -952,8 +845,6 @@ label {
     }
     .send-btn {
         padding: 10px 30px;
-        border-radius: 10px 10px 10px 0px;
         font-size: 15px;
-        font-weight: 600;
     }
 }
